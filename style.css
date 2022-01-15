@@ -1,0 +1,62 @@
+
+body{
+    animation: changeanimation 1s linear infinite;
+}
+
+/* @keyframes changeanimation{
+    0%{
+        background-color: white;
+    }
+    20%{
+        background-color: black;
+    }
+    40%{
+        background-color: rgb(12, 16, 59);
+    }
+    60%{
+        background-color: green;
+    }
+    80%{
+        background-color: red;
+    }
+} */
+
+
+.img{
+    width:20%;
+    display:block;
+    margin:auto;
+    padding-bottom: 20px;
+}
+
+
+input{
+    width:89%;
+    line-height:2.5em;
+    border:2px solid red;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius:15px;
+    margin-bottom: 25px;
+}
+
+button{
+    width:10%;
+    height: 4em;
+    border: 2px solid black;
+    border-radius : 15px;
+}
+
+.results{
+    text-align:center;
+}
+
+@media (max-width:800px) and (min-width:200px){
+    input{
+        width:100%;
+    }
+    button{
+        display:block;
+        margin:auto;
+    }
+
+}
