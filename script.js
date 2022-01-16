@@ -37,10 +37,12 @@ function displayResult(results){
         var resultUrl=`https://en.wikipedia.org/?curid=${e.pageid}`
         printvalue+=
         `
+        <i>
         <a href=${resultUrl} target="__blank">Know More</a>
         <h2>${e.title}</h2>
         <p>${e.snippet}</p>
         <h3>Time: ${e.timestamp}</h3>
+        </i>
         `
         searchResult.innerHTML=printvalue;
     })
