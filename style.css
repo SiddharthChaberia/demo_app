@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto+Mono:wght@300&display=swap');
 
 /* body{
     animation: changeanimation 1s linear infinite;
@@ -22,7 +23,7 @@
 } */
 
 body{
-    background-color:rgb(214, 200, 200);
+    background-color:rgb(230, 221, 221);
 }
 
 .img{
@@ -40,9 +41,12 @@ input{
     line-height:2.5em;
     border:8px groove grey;
     border-radius: 15px;
-    border-top-left-radius:0px;
+    border-bottom-right-radius:0px;
+    border-top-right-radius:0px;
+    margin-left:20px;
     margin-bottom: 25px;
     box-shadow: 8px 8px 5px rgb(36, 32, 32);
+    background-color:rgb(224, 215, 215);
 }
 
 button{
@@ -50,9 +54,12 @@ button{
     height: 4em;
     border: 8px groove grey;
     border-radius : 15px;
+    border-bottom-left-radius:0px;
     border-top-left-radius:0px;
     box-shadow: 8px 8px 5px rgb(36, 32, 32);
-    margin-left:10px;
+    margin-left:8px;
+    
+    cursor: pointer;
 
 }
 
@@ -63,19 +70,22 @@ button{
 
 .results{
     text-align:left;
-    margin-left:20px;
+    margin-left:50px;
+    margin-right:50px;
+    border:5px groove grey;
+    /* box-shadow: 8px 8px 5px rgb(36, 32, 32); */
+    visibility:hidden;
 }
 
-.searching{
-    margin-left:30px;
-}
 
-@media only screen and (min-width:200px) and (max-width:800px){
+
+@media (min-width:200px) and (max-width:800px){
     input{
         width:100%;
     }
     button{
         display:block;
-        margin:auto;
+        margin-left:auto;
+        margin-right:auto;
     }
 }

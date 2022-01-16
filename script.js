@@ -27,6 +27,7 @@ async function getResult(searchval)
     else{
         displayResult(result);
         search.value="";
+        searchResult.style.visibility="visible";
     }
 }
 
@@ -37,13 +38,16 @@ function displayResult(results){
         var resultUrl=`https://en.wikipedia.org/?curid=${e.pageid}`
         printvalue+=
         `
+        <br>
         <i>
         <a href=${resultUrl} target="__blank">Know More</a>
         <h2>${e.title}</h2>
         <p>${e.snippet}</p>
         <h3>Time: ${e.timestamp}</h3>
         </i>
+        <hr>
         `
         searchResult.innerHTML=printvalue;
+        searchResult.style.visibility="visible";
     })
 }
